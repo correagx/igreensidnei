@@ -1303,3 +1303,20 @@ address {
   .container { max-width: 1180px; }
 
 }
+
+.img-mobile {
+  display: none;
+}
+
+/* Para telas menores que 768px (celulares), mostra a imagem mobile e esconde a desktop */
+@media (max-width: 768px) {
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
